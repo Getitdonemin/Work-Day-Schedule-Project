@@ -2,29 +2,25 @@ $(document).ready(function () {
 
     var x = [9, 10, 11, 12, 13, 14, 15, 16, 17];
 
-
-
-
-    //moment.js to put current date on jumbotron
+    //adds current date on jumbotron
     var currentDate = moment().format("dddd, MMMM Do YYYY");
     $("#currentDay").text(currentDate);
     var currentTime = moment().format("H");
 
-    //forEach loops through x[], pushes "time" elements to new startTime[] in the "00 AM/PM" format
+    //pushes the element 'time' to startTime variable in "00 AM/PM" format
     x.forEach(function (time, index) {
         var startTime = [];
         startTime.push(moment().hour(time).format("h A"));
         // console.log(parseInt(startTime));
         // console.log(moment().hour());
 
-        //Declare new var(s) and initialize to new el's
+        //New variables for new elements
         var newDiv = $("<div>");
         var newSpan = $("<span>");
         var newTextInput = $("<input>");
         var newBtn = $("<button>");
 
-
-        //appends new el's to container, parent or sibling respectively. Adds B/S classes to new el's 
+        //appending new elements to container while adding a B/S class
         $(".container").append(newDiv);
         $(".container").addClass("mb-5");
 
@@ -42,7 +38,6 @@ $(document).ready(function () {
         newDiv.append(newBtn);
         newBtn.addClass("btn btn-outline-secondary");
 
-        /* END OF FOREACH()*/
     });
 
     //click event 
@@ -55,9 +50,8 @@ $(document).ready(function () {
         var lsVal = localStorage.getItem(textInput);
         $(this).siblings("input").text(lsVal);
     });
-
-    //updated width of time block span and changed btn text to "SAVE"
-    // Consider using fontawesome icon for save feature
+    
+    //updates button width while using the font-awesome icon
     $(".input-group-text").css("width", "100px");
     $("button").text("SAVE"); // update with icon from font-awesome
 
