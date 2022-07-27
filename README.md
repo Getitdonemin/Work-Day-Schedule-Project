@@ -51,3 +51,4 @@ The following animation demonstrates the application functionality:
 * The URL of the deployed application
 https://getitdonemin.github.io/Work-Day-Scheduler-Project/
 * The URL of the GitHub repository
+https://github.com/Getitdonemin/Work-Day-Scheduler-Project
