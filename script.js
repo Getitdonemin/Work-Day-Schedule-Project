@@ -43,7 +43,6 @@ $(document).ready(function () {
     //click event 
     $("button").on("click", function (event) {
         event.preventDefault();
-
         var textInput = $(this).siblings("input").attr("data");
         var textVal = $(this).siblings("input").val();
         localStorage.setItem(textInput, textVal);
