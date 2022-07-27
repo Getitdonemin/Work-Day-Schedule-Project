@@ -41,7 +41,8 @@ THEN the saved events persist
 ## Mock-Up
 The following animation demonstrates the application functionality:
 
-![image](https://user-images.githubusercontent.com/107437104/181144675-9b4b80c1-7b0c-40a2-bb18-b149a950fb14.png)
+![05-third-party-apis-homework-demo](https://user-images.githubusercontent.com/107437104/181144935-542c5d08-0078-45a0-a3de-19005c97c360.gif)
+
 
 ```
 ```
